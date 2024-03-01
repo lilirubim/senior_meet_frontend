@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// import { Tab, initMDB } from "mdb-ui-kit";
 
 @Component({
   selector: 'app-user-profile',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './user-profile.component.css'
 })
 export class UserProfileComponent {
-
+  // initMDB({ Tab })
 }

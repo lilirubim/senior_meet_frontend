@@ -11,60 +11,69 @@ import { PostComponent } from './post/post.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SavedComponent } from './saved/saved.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 export const routes: Routes = [
-    {
-        path: '',
-        redirectTo: '/home',
-        pathMatch: 'full'
-      },
-      {
-        path: 'home',
-        component: HomeWallComponent
-      },
-      {
-        path: 'admin',
-        component: AdminComponent
-      },
-      {
-        path: 'create-profile',
-        component: CreateProfileComponent
-      },
-      {
-        path: 'delete-profile',
-        component: DeleteProfileComponent
-      },
-      {
-        path: 'edite-profile',
-        component: EditeProfileComponent
-      },
-      {
-        path: 'group',
-        component: GroupComponent
-      },
-      {
-        path: 'hobbies',
-        component: HobbiesComponent
-      },
-      {
-        path: 'login',
-        component: LoginComponent
-      },
-      {
-        path: 'post',
-        component: PostComponent
-      },
-      {
-        path: 'user-profile',
-        component: UserProfileComponent
-      },
-      {
-        path: 'saved',
-        component: SavedComponent
-      },
-      // Dejar este enrutado al final del todo.
-      {
-        path: '**', // Ruta comodín, atrapa cualquier url no capturada anteriormente
-        component: NotFoundComponent
-      }
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    component: HomeWallComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
+  },
+  {
+    path: 'create-profile',
+    component: CreateProfileComponent
+  },
+  {
+    path: 'delete-profile',
+    component: DeleteProfileComponent
+  },
+  {
+    path: 'edite-profile',
+    component: EditeProfileComponent
+  },
+  {
+    path: 'groups',
+    component: GroupComponent
+  },
+  {
+    path: 'hobbies',
+    component: HobbiesComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'posts',
+    component: PostComponent
+  },
+  {
+    path: 'user-profile',
+    component: UserProfileComponent
+  },
+  {
+    path: 'saved',
+    component: SavedComponent
+  },
+  {
+    path: 'users',
+    component: UserListComponent
+  },
+  {
+    path: 'users/:id/detail',
+    component: UserDetailComponent
+  },
+  {
+    path: '**', 
+    component: NotFoundComponent
+  }
 ];
