@@ -1,2 +1,2 @@
-export interface InteractionModel {
+export interface Interaction {
 }

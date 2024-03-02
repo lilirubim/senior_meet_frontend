@@ -1,3 +1,7 @@
+import { Group } from "./group.model";
+import { Hobby } from "./hobby.model";
+import { Post } from "./post.model";
+
 export interface User {
     id: number;
     firstName: string;
@@ -5,4 +9,8 @@ export interface User {
     email: string;
     password: string;
     phone: string;
+    //photo: string;
+    groups: Group[];
+    hobbies: Hobby[];
+    posts: Post[]
 }

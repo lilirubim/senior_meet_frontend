@@ -1,2 +1,2 @@
-export interface PostModel {
+export interface Post {
 }

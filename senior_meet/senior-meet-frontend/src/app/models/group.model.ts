@@ -1,2 +1,2 @@
-export interface GroupModel {
+export interface Group {
 }

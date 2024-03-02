@@ -1,2 +1,2 @@
-export interface HobbyModel {
+export interface Hobby {
 }
