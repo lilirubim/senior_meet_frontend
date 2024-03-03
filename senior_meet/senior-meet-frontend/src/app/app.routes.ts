@@ -57,7 +57,7 @@ export const routes: Routes = [
     component: PostComponent
   },
   {
-    path: 'user-profile',
+    path: 'user-profile/:id/detail',
     component: UserProfileComponent
   },
   {
