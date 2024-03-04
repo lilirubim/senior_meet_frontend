@@ -1,3 +1,6 @@
+import { User } from "./user.model";
+
+
 export interface Group{
     id: number;
     title: string;
@@ -7,3 +10,4 @@ export interface Group{
     
     user: User;
 }
+
