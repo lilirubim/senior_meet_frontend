@@ -4,5 +4,6 @@ export interface Group{
     description: string;
     rules: string;
     photosUrl: string;
-    user: string;
+    
+    user: User;
 }
