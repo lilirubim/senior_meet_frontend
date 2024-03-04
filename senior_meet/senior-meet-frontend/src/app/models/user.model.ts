@@ -9,7 +9,7 @@ export interface User {
     email: string;
     password: string;
     phone: string;
-    //photo: string;
+    photo: File | null;
     groups: Group[];
     hobbies: Hobby[];
     posts: Post[]

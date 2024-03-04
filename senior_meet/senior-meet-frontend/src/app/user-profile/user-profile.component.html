@@ -1,8 +1,18 @@
 <h2>User Profile</h2>
+<hr>
+
+<form [formGroup]="userForm" (ngSubmit)="uploadUser()">
+    <input type="text" formControlName="firstName" placeholder="Name" required>
+    <input type="email" formControlName="email" placeholder="Email" required>
+    <input type="file" (change)="onFileSelected($event)" required>
+    <button type="submit">Upload</button>
+</form>
+
+<hr>
 
 <div class="container-fluid">
 
-    <p>Foto</p>
+    <p>Foto - <img src="{{user?.photo}}"></p>
 
     <p>{{user?.firstName}}</p>
     <p>{{user?.lastName}}</p>
